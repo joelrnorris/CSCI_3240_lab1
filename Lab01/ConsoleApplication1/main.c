@@ -14,16 +14,19 @@ int main(void) {
 	
 	// get user input
 	printf("%s", "Please enter total number of bits:");
-	scanf_s("%d", &totalNumBits);
+	scanf("%i", &totalNumBits);
 
 	// input validation
 	 while ( totalNumBits < 2 || totalNumBits > 32) {
 		printf("%s", "Input must be a number between 2 and 32\n\n");
 		printf("%s", "Please enter total number of bits:");
-		scanf_s("%d", &totalNumBits);
+		scanf("%i", &totalNumBits);
 	 }
 
+	printf("totalNumBits : %i\n ", totalNumBits );
 
+	printf("sizeof(unsigned int) : %lu", sizeof(unsigned int) ); 
+	
 
 	/**
 	Please enter the total number of bits: 
